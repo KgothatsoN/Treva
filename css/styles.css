@@ -19,3 +19,10 @@ body   {
     font-size: 1.5rem;
     margin: .8rem;
 }
+
+.logo a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
