@@ -57,22 +57,21 @@ body   {
 
 /* Hamburger Styling */
 .hamburger  {
-    position: absolute;
+    position: fixed;
     display: none;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+    top: .75rem;
+    right: 1rem;
     width: 30px;
     height: 20px;
-    top: 1rem;
-    right: .5rem;
 }
 
 .hamburger .bar {
-    display: flex;
-    width: 100%;
     height: 3px;
+    width: 100%;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .price-component    {
@@ -171,15 +170,38 @@ body   {
 }
 
 @media (max-width: 768px)   {
-    .navbar-links   {
-        display: none;
-    }
-
     .price-card {
         margin: 10px;
     }
-
+    
     .hamburger  {
         display: flex;
     }
+
+    .navbar-links   {
+        display: none;
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-links ul    {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-links li a {
+        width: 100%;
+        padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active    {
+        display: flex;
+    }
+
+    
 }
