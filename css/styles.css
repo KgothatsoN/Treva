@@ -10,6 +10,7 @@ body   {
 }
 
 /* Logo Styling */
+
 .logo   {
     font-size: 1.5rem;
     margin: .5rem;
@@ -45,6 +46,7 @@ body   {
     text-decoration: none;
     color: white;
     padding: 1rem;
+    font-weight: bolder;
 }
 
 .navbar-links li:hover  {
@@ -81,7 +83,7 @@ body   {
 .price-card {
     display: flex;
     flex-direction: column;
-    width: 578px;
+    width: 610px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 8px 6px 20px #2b2b2b2e;
@@ -133,6 +135,13 @@ body   {
 
 .right-info ul  {
     list-style: none;
+    padding-left: 15px;
+}
+
+.right-info h5   {
+    margin-top: 14px;
+    margin-bottom: 0px;
+    font-size: 25px;
 }
 
 /* Signup button styling */
@@ -141,9 +150,9 @@ body   {
     justify-content: center;
     width: 10rem;
     height: 30px;
-    background-color: #1DA1F2;
+    background-color: #C5EDD1;
     border-radius: 6px;
-    border-color: #1DA1F2;
+    border-color: #C5EDD1;
     box-shadow: 3px 0px 12px 2px grey;
     cursor: pointer;
 }
@@ -156,5 +165,19 @@ body   {
 }
 
 .sign-up-button:hover   {
-    background-color: #1da0f2c7;
+    background-color: #a5d2b2;
+}
+
+@media (max-width: 768px)   {
+    .navbar-links   {
+        display: none;
+    }
+
+    .price-card {
+        margin: 10px;
+    }
+
+    .hamburger  {
+        display: flex;
+    }
 }
